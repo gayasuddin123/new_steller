@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&family=Ubuntu:wght@500&display=swap');
+
+
+.explore-text {
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Ubuntu', sans-serif; */
+    font-size: 2.5rem;
+    letter-spacing: 1.5px;
+}
