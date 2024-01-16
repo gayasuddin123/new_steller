@@ -195,6 +195,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    object-fit: cover;
 }
 
 .home::before {
@@ -269,7 +270,7 @@ a {
 /* there are gallery images wrapped here */
 .grid-container {
     padding: 48px 24px;
-    height: 80vh;
+    /* height: 80vh; */
 }
 
 .inner {
@@ -354,17 +355,11 @@ a {
 
 .picOfDay {
     display: flex;
-    height: 80vh;
+    /* height: 80vh; */
     width: 100%;
     justify-content: space-between;
     /* flex-wrap: wrap; */
     padding: 72px 24px;
-    position: relative;
-}
-@media (min-width: 1025px) {
-    .picOfDay{
-        margin-top:100px;
-    }
 }
 
 .picOfDay-text {
@@ -375,13 +370,13 @@ a {
 
 .picOfDay-text-heading {
     font-size: 2.9rem;
-    margin: 20px 0px;
+    margin-bottom: 20px;
     line-height: 50px;
 }
 
 .Image-picOfDay-container {
     padding: 0 0 0 40px;
-    margin: auto;
+    /* margin: auto; */
 }
 
 .Image-picOfDay {
@@ -397,7 +392,7 @@ a {
     /* Adjust styles for smaller screens */
     .picOfDay-text {
         width: 100%;
-        margin-top: 30rem;
+        /* margin-top: 30rem; */
         /* text-align: center; */
     }
 
@@ -426,7 +421,7 @@ a {
 @media only screen and (max-width: 642px){
     .picOfDay-text {
         width: 100%;
-        margin-top: 55rem;
+        /* margin-top: 55rem; */
     }
     .Image-picOfDay-container {
         padding: 2rem 0 0 0;
@@ -436,7 +431,9 @@ a {
         font-size: 2rem;
     }
 }
-
+.done-block{
+    display: block;
+}
 /* here end of the pic of the day */
 
 /* footer css */
