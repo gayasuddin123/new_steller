@@ -269,29 +269,32 @@ a {
 /* there are gallery images wrapped here */
 .grid-container {
     padding: 48px 24px;
-    height: 100vh;
+    height: 80vh;
 }
 
 .inner {
     display: flex;
     flex-direction: column;
-    padding: 0 32px; /* imp*/
+    padding: 0 32px;
+    /* imp*/
     /* margin: 56px; */
 }
 
-.explore-text-wrapper{
+.explore-text-wrapper {
     display: flex;
     margin: 2rem 0;
     align-items: center;
     justify-content: center;
 }
-.explore-text{
+
+.explore-text {
     margin-bottom: 1.5rem;
     /* float: left; */
 }
-.more-pages-here{
+
+.more-pages-here {
     /* float: right; */
-    margin-left:auto;
+    margin-left: auto;
     font-size: 1.4rem;
 }
 
@@ -329,24 +332,115 @@ a {
     .image-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+
     /* this is for explore text up and more page down */
-    .explore-text-wrapper{
+    .explore-text-wrapper {
         display: block;
     }
-    .more-pages-here{
-        /* margin-right: auto; */
-    }
+
+    /* .more-pages-here {
+        margin-right: auto;
+    } */
 }
+
 @media (max-width: 640px) {
     .image-grid-res {
         grid-column: span 2;
     }
 }
 
+
+/* here we start  the pic of the day */
+
+.picOfDay {
+    display: flex;
+    height: 80vh;
+    width: 100%;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    padding: 72px 24px;
+    position: relative;
+}
+@media (min-width: 1025px) {
+    .picOfDay{
+        margin-top:100px;
+    }
+}
+
+.picOfDay-text {
+    width: 40%;
+    padding: 0 40px 0 0;
+    margin: auto;
+}
+
+.picOfDay-text-heading {
+    font-size: 2.9rem;
+    margin: 20px 0px;
+    line-height: 50px;
+}
+
+.Image-picOfDay-container {
+    padding: 0 0 0 40px;
+    margin: auto;
+}
+
+.Image-picOfDay {
+    /* height: auto; */
+    max-height: 350px;
+    /* Set a maximum height if needed */
+    width: 100%;
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 1024px) {
+
+    /* Adjust styles for smaller screens */
+    .picOfDay-text {
+        width: 100%;
+        margin-top: 30rem;
+        /* text-align: center; */
+    }
+
+    .picOfDay {
+        flex-direction: column;
+        /* height:100vh; */
+        /* flex-wrap: wrap; */
+
+    }
+
+    .Image-picOfDay {
+        height: auto;
+        width: 100%;
+    }
+
+    .Image-picOfDay-container {
+        padding: 2rem;
+
+    }
+
+    .picOfDay-text-heading {
+        margin-bottom: 40px;
+    }
+
+}
+@media only screen and (max-width: 642px){
+    .picOfDay-text {
+        width: 100%;
+        margin-top: 55rem;
+    }
+    .Image-picOfDay-container {
+        padding: 2rem 0 0 0;
+        margin: 0;
+    }
+}
+
+/* here end of the pic of the day */
+
 /* footer css */
 body {
     line-height: 1.5;
     font-family: 'Poppins', sans-serif;
+
 }
 
 .container {
@@ -362,6 +456,7 @@ body {
 ul {
     list-style: none;
 }
+
 .footer {
     background-color: #24262b;
     padding: 70px 0;
