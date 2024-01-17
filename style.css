@@ -195,7 +195,6 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    object-fit: cover;
 }
 
 .home::before {
@@ -365,7 +364,6 @@ a {
 .picOfDay-text {
     width: 40%;
     padding: 0 40px 0 0;
-    margin: auto;
 }
 
 .picOfDay-text-heading {
@@ -431,10 +429,98 @@ a {
         font-size: 2rem;
     }
 }
-.done-block{
-    display: block;
-}
+
 /* here end of the pic of the day */
+
+/* start of full screen size pic earthinfo which contains may be info of img */
+.earthInformation {
+    /* height: 100vh; */
+    position: relative;
+}
+
+.earthinfoImage {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: relative;
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.499)), linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.731)),linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.499)),
+    url(/scifi-4916165_1280.webp);
+    /* filter: brightness(40%); */
+    background-position: center;
+    background-size: cover;
+
+}
+
+.earthInformation .earthInfoHeading {
+    color: rgb(255, 255, 255);
+    font-size: 4rem;
+    width: 200px;
+    line-height: 80px;
+}
+
+.earthInformation .earthpara {
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    /* width: 550px; */
+}
+
+.earth-button {
+    display: flex;
+    color: white;
+    background-color: rgb(173, 92, 57);
+    padding: 5px;
+    width: 200px;
+    box-shadow: 0px 0px 90px orange;
+    border: 1px solid rgb(203, 143, 33);
+    font-size: 1rem;
+}
+.earth-button span{
+    margin-left: 15px;
+}
+.earthInformation .earthinfo-inner{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 3rem;
+    gap: 30px;
+    /* gap: 30px; */
+}
+
+@media screen and (max-width: 1024px) {
+    /* Adjust styles for smaller screens */
+    .earthInformation .earthInfoHeading {
+        font-size: 3.5rem;
+        line-height: 60px;
+    }
+
+    .earthInformation .earth-button {
+        font-size: 18px;
+    }
+
+    .earthInformation .earthpara {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    /* Adjust styles for smaller screens */
+
+    .earthInformation .earthInfoHeading {
+        font-size: 2.5rem;
+        line-height: 50px;
+    }
+
+    .earthInformation .earth-button {
+        font-size: 14px;
+    }
+
+    .earthInformation .earthpara {
+        font-size: 16px;
+    }
+}
+
+/* end of earthinfo */
 
 /* footer css */
 body {
