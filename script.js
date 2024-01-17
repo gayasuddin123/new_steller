@@ -17,3 +17,7 @@ document.onclick = function(event){
         t1.classList.remove("change");
     }
 }
+
+function masti() {
+    
+}

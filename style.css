@@ -123,7 +123,11 @@ a {
     color: rgb(192, 192, 192);
 
 }
-
+@media (max-width:1024px) {
+    .b-remo{
+        display: none;
+    }
+    }
 @media (max-width:768px) {
     .container-toggle-btn {
         display: block;
@@ -444,7 +448,7 @@ a {
     object-fit: cover;
     position: relative;
     background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.499)), linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.731)),linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.499)),
-    url(/scifi-4916165_1280.webp);
+    url(./scifi-4916165_1280.webp);
     /* filter: brightness(40%); */
     background-position: center;
     background-size: cover;
@@ -521,7 +525,63 @@ a {
 }
 
 /* end of earthinfo */
+/* 2nd footer start from here */
+.footer-ul{
+    display: inline-grid;
+    grid-auto-flow: row;
+    grid-gap: 24px;
+    justify-items: center;
+    margin: auto;
+  }
 
+  @media (min-width: 500px) {
+    .footer-ul{
+      grid-auto-flow: column;
+    }
+  }
+
+  .footer-ul > a {
+    color: white;
+    text-decoration: none;
+    box-shadow: inset 0 -1px 0 hsla(0, 0%, 100%, 0.4);
+  }
+
+  .footer-ul > a:hover {
+    box-shadow: inset 0 -1.2em 0 hsla(0, 0%, 100%, 0.4);
+  }
+
+  .footer-ul > li:last-child {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  .footer-ul > li:hover ~ li p {
+    animation: wave-animation 0.3s infinite;
+  }
+
+  /* below is just for demo styling */
+
+  .footer-div{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background-color: #002a38;
+    line-height: 1.3;
+    font-family: Menlo, monospace;
+  }
+
+  @keyframes wave-animation {
+    0%,
+    100% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(20deg);
+    }
+    75% {
+      transform: rotate(-15deg);
+    }
+  }
 /* footer css */
 body {
     line-height: 1.5;
