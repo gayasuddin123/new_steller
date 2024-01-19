@@ -702,3 +702,12 @@ ul {
 .explore-image1 {
     grid-column: 1/3;
 }
+
+/* last gif meme */
+.meme {
+    background-image: url("./bear\ dancing\ meme\ gif.gif");
+    background-position: center;
+    height: 50vh;
+    background-repeat: no-repeat;
+
+}

@@ -17,7 +17,9 @@ document.onclick = function(event){
         t1.classList.remove("change");
     }
 }
-
+let hidep = document.getElementById('hide-show')
+let memegif = document.getElementById('masti')
 function masti() {
-    
+    console.log('hello')
+    memegif.classList.toggle('meme')
 }
