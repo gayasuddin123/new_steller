@@ -132,7 +132,9 @@ a {
     .container-toggle-btn {
         display: block;
     }
-
+    .b-remo{
+        display: block;
+    }
     .nav-menu {
         position: fixed;
         left: -100%;
@@ -231,6 +233,7 @@ a {
 @media((min-width:715px) and (max-width:900px)) {
     .main-heading h1 {
         font-size: 4rem;
+        text-align: center;
     }
 
     #main-para2 {
@@ -241,6 +244,7 @@ a {
 @media((min-width:550px) and (max-width:715px)) {
     .main-heading h1 {
         font-size: 3rem;
+        text-align: center;
     }
 
     #main-para2 {
@@ -331,7 +335,23 @@ a {
 .image-grid-row-2 {
     grid-row: span 2;
 }
-
+.exp-cont{
+    background-image: url("./andruyan.jpg");
+    background-position: center;
+    background-size:cover;
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    gap: 140px;
+}
+.ig-article{
+    padding: 10px 0;
+    padding-left: 30px;
+    color: #fdfdfd;
+    font-size: 1.2rem;
+    margin: 30px 0 ;
+    /* background-color: #e91e63; */
+}
 @media (max-width: 1024px) {
     .image-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -350,6 +370,11 @@ a {
 @media (max-width: 640px) {
     .image-grid-res {
         grid-column: span 2;
+    }
+}
+@media (max-width: 640px){
+    .ig-article{
+        font-size: 1rem;
     }
 }
 
@@ -421,17 +446,24 @@ a {
 
 }
 @media only screen and (max-width: 642px){
+    .picOfDay{
+        display: flex;
+        flex-direction: column;
+    }
     .picOfDay-text {
         width: 100%;
+        order: 3;
         /* margin-top: 55rem; */
     }
     .Image-picOfDay-container {
         padding: 2rem 0 0 0;
         margin: 0;
+        order: 1;
     }
     .picOfDay-text-heading {
         font-size: 2rem;
     }
+
 }
 
 /* here end of the pic of the day */
@@ -477,6 +509,11 @@ a {
     box-shadow: 0px 0px 90px orange;
     border: 1px solid rgb(203, 143, 33);
     font-size: 1rem;
+}
+@media (max-width:600px){
+    .earth-button{
+        width: 50vw;
+    }
 }
 .earth-button span{
     margin-left: 15px;

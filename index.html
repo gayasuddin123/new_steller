@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style.css"> <!--  this is the main css file -->
     <link href='https://unpkg.com/css.gg@2.0.0/icons/css/arrow-top-right-o.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
 </head>
 
 <body>
@@ -24,12 +25,12 @@
             </a>
             <ul class="nav-menu ">
                 <li class="nav-item"><a class="nav-link " href="#">Home</a></li>
-                <li class="nav-item"><a class="nav-link " href="#">Services</a></li>
+                <li class="nav-item"><a class="nav-link b-remo" href="#">Services</a></li>
                 <li class="nav-item"><a class="nav-link b-remo" href="#">Blog</a></li>
-                <li class="nav-item"><a class="nav-link b-remo" href="#">About Us</a></li>
+                <li class="nav-item"><a class="nav-link " href="#">About Us</a></li>
                 <li class="nav-item"><a class="nav-link " href="#">Contact Us</a></li>
                 <li class="nav-item"><a class="nav-link signs signup" href="#">Sign Up</a></li>
-                <li class="nav-item"><a class="nav-link signs signin" href="#">Log In</a></li>
+                <li class="nav-item"><a class="nav-link signs signin" href="loginn_page.html">Log In</a></li>
             </ul>
             <div class="container-toggle-btn " id="t1">
                 <div class="bar1 "></div>
@@ -56,7 +57,12 @@
                         <p class="more-pages-here">more pages here</p>
                 </div>
                 <div class="image-grid">
-                    <img class="image-grid-col-2 image-grid-row-2" src="./andruyan.jpg" alt="">
+                    <!-- <img class="image-grid-col-2 image-grid-row-2" src="./andruyan.jpg" alt=""> -->
+                    <div class="image-grid-col-2 image-grid-row-2 exp-cont">
+                        <p class="ig-article">Article</p>
+                        <p class="ig-article">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ipsum
+                            dolorem culpa quis </p>
+                    </div>
                     <img class="image-grid-row-2 image-grid-res" src="./atoms.jpg" alt="">
                     <img class="image-grid-res" src="./home-img.jpg" alt="">
                     <img class="image-grid-res" src="./solar system.jpg" alt="n">
@@ -64,6 +70,8 @@
             </div>
 
         </div>
+
+
 
         <!-- here we set full width photo with some text under explore section -->
         <!-- here we are showing pic of the day with some text content using flex -->
@@ -107,15 +115,15 @@
     <!-- new footer 2nd start Here -->
     <div class="footer-div">
         <ul class="footer-ul">
-          <li><a href="#">Twitter</a></li>
-          <li><a href="#">Email</a></li>
-          <li><a href="https://www.instagram.com/call_me_ansari_786/">instagram</a></li>
-          <li><a href="">Github</a></li>
-          <li>
-            <p>👋</p>
-          </li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Email</a></li>
+            <li><a href="https://www.instagram.com/call_me_ansari_786/">instagram</a></li>
+            <li><a href="">Github</a></li>
+            <li>
+                <p>👋</p>
+            </li>
         </ul>
-      </div>
+    </div>
     <!-- footer start here -->
     <!-- <footer class="footer">
         <div class="container">
@@ -159,7 +167,9 @@
         </div>
     </footer> -->
     <!-- footer end -->
-    <div id="masti" onclick="masti()"><p id="hide-show">Don't click here otherwise !!!</p></div>
+    <div id="masti" onclick="masti()">
+        <p id="hide-show">Don't click here otherwise !!!</p>
+    </div>
 </body>
 <script src="script.js"></script>
 
