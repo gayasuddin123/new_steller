@@ -194,7 +194,7 @@ a {
 /* navbar css end */
 .home {
     width: 100%;
-    height: 80vh;
+    height: 100vh;
     /* background-image: url(nasa.jpg); */
     background-position: center;
     background-size: cover;
@@ -212,7 +212,7 @@ a {
     background-position: center;
     background-size: cover;
     width: 100%;
-    height: 80vh;
+    height: 100vh;
     z-index: -1;
 }
 
@@ -230,7 +230,7 @@ a {
     filter: brightness(90%);
 }
 
-@media((min-width:715px) and (max-width:900px)) {
+@media((min-width:715px) and (max-width:1023px)) {
     .main-heading h1 {
         font-size: 4rem;
         text-align: center;
@@ -255,6 +255,7 @@ a {
 @media((min-width:300px) and (max-width:550px)) {
     .main-heading h1 {
         font-size: 2rem;
+        text-align: center;
     }
 
     #main-para2 {

@@ -23,3 +23,4 @@ function masti() {
     console.log('hello')
     memegif.classList.toggle('meme')
 }
+
