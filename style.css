@@ -211,7 +211,7 @@
     /* justify-content: space-between; */
     /* flex-wrap: wrap; */
     padding: 4rem 3rem;
-    background-color: #efefef;
+    background-color: #f2f2f2;
 }
 
 .picOfDay-text {
@@ -311,8 +311,8 @@
 .earthInformation .earthInfoHeading {
     color: rgb(255, 255, 255);
     font-size: 4rem;
-    width: 200px;
     line-height: 80px;
+    max-width: 1vw;
 }
 
 .earthInformation .earthpara {
@@ -369,10 +369,9 @@
     /* Adjust styles for smaller screens */
 
     .earthInformation .earthInfoHeading {
-        font-size: 2.5rem;
-        line-height: 50px;
+        font-size: 8vw;
+        line-height: 8vh;
     }
-
     .earthInformation .earth-button {
         font-size: 14px;
     }
